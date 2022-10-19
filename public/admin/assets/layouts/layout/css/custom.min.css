@@ -1,0 +1,48 @@
+
+.page-sidebar .page-sidebar-menu > li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a {
+    color: #fff;
+}
+.page-sidebar .page-sidebar-menu > li > a > i[class*="fa-"], .page-sidebar .page-sidebar-menu > li > a > i[class^="icon-"], .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class*="icon-"], .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class^="icon-"] {
+    color: #fff;
+}
+.page-sidebar .page-sidebar-menu > li > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i {
+    font-size: 24px;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu > li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a {
+    color: #fff;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class*="fa-"], .page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"], .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"], .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"] {
+    color: #fff;
+}
+
+/*
+.page-content-wrapper { 
+    background-color: #021a3e;
+}
+.page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper, .page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-search-wrapper, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-toggler-wrapper {
+    border: 0 !important;
+    background-color: #021a3e;
+}
+
+.page-sidebar .page-sidebar-menu > li, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li {
+    background-color: #120156;
+}
+ */
+
+.page-logo img{
+height: 80px;
+background-color: #ffffff;
+padding: 5px;
+border-radius: 10px;
+}
+
+#table_immg{
+height: 50px;
+border-radius: 10px;
+width: 50px;
+
+}
+
+.bootstrap-tagsinput { width: 100%; }
