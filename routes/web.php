@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 
 // ============ CMS ===============
 Route::group(array('prefix' => 'admincp'),

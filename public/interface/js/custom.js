@@ -271,7 +271,7 @@ function cart_block(){
 // Home page Services function by = owl.carousel.js ========================== //
 	function services_slider(){
 	jQuery('.services-slider').owlCarousel({
-		loop:true,
+		loop:false,
 		autoplay:true,
 		nav:true,
 		dots: false,	
