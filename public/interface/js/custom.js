@@ -336,7 +336,7 @@ function cart_block(){
 // Home page Project Slider function by = owl.carousel.js ========================== //
 	function project_1_slider(){
 	jQuery('.project-1-slider').owlCarousel({
-		loop:true,
+		loop:false,
 		autoplay:false,
 		nav:true,
 		dots: false,	
@@ -418,7 +418,7 @@ function project_gallery_one(){
 // > work carousel  function by = owl.carousel.js ========================== //
 function projects_carousel2(){
 	jQuery('.projects-carousel-two').owlCarousel({
-        loop:true,
+        loop:false,
 		autoplay:false,
 		margin:15,
 		nav:true,
@@ -574,7 +574,7 @@ function projects_carousel2(){
 // Gallery slider function by = owl.carousel.js ========================== //
 	function gallery_slider(){
 	jQuery('.gallery-slider').owlCarousel({
-		loop:true,
+		loop:false,
 		autoplay:false,
 		nav:true,
 		dots: false,	
@@ -614,7 +614,7 @@ function projects_carousel2(){
 // Gallery slider function by = owl.carousel.js ========================== //
 	function gallery_slider2(){
 	jQuery('.gallery-slider2').owlCarousel({
-		loop:true,
+		loop:false,
 		autoplay:true,
 		nav:false,
 		dots: true,	
@@ -824,7 +824,7 @@ function projects_carousel2(){
 	//  Service Gallery Carousel two function by = owl.carousel.js ========================== //
 	function services_gallery_carousel_two(){
 		jQuery('.services-gallery-two').owlCarousel({
-			loop:true,
+			loop:false,
 			nav:true,
 			dots: false,				
 			margin:15,

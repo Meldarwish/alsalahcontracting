@@ -101,7 +101,7 @@
                 <div class="logo-header">
                     <div class="logo-header-inner logo-header-one">
                         <a href="{{route('index')}}">
-                        <img src="{{asset('interface/images/logo-dark.png')}}" alt="" />
+                        <img src="{{asset('interface/images/My-logo2.png')}}" alt="" />
                         </a>
                     </div>
                 </div>
@@ -185,13 +185,13 @@
                                                                                        
                                         </ul>                                
                                     </li> --}}
-                                    <li><a href="javascript:;">Project</a>
-                                        <ul class="sub-menu">
+                                    <li><a href="{{route('services')}}">Services</a>
+                                        {{-- <ul class="sub-menu">
                                             <li><a href="project-grid.html">Project Grid</a></li>                                        
                                             <li><a href="project-masonry.html">Project Masonry</a></li>
                                             <li><a href="project-carousel.html">Project Carousel</a></li>
                                             <li><a href="project-detail.html">Project Detail</a>
-                                        </ul>                                
+                                        </ul>                                 --}}
                                    </li>
                                     {{-- <li><a href="javascript:;">Shop</a>
                                         <ul class="sub-menu">
@@ -252,7 +252,7 @@
                         <div class="footer-h-left"> 
                             <div class="widget widget_about">
                                 <div class="logo-footer clearfix">
-                                    <a href="{{route('index')}}"><img src="{{asset('interface/images/logo-light.png')}}" alt="" ></a>
+                                    <a href="{{route('index')}}"><img src="{{asset('interface/images/My-logo2.png')}}" alt="" ></a>
                                 </div>
                                 <p>Over 15 year experience and knowledge international standards technologicaly changes our industrial systems, we are dedicated to provides the best solutions to our valued customers there are many variation solution we makes long-term investments goal in global companies in different sectors, mainly in USA and other countries</p>
                              </div>
@@ -291,14 +291,15 @@
 
                             <div class="col-lg-7 col-md-8">
                                 <div class="widget widget_services">
-                                    <h3 class="widget-title">Our Services</h3>
-                                    <ul>
+                                    <h3 class="widget-title"></h3></h3>
+                                    {{-- <ul>
                                         <li><a href="s-oilgas.html">Oil & Gas Factory</a><a href="s-chemical.html">Chemical Research</a></li>
                                         <li><a href="s-chemical.html">Chemical Research</a><a href="s-agricultural.html">Agricultural</a></li>
                                         <li><a href="s-mechanical.html">Mechanical</a><a href="s-agricultural.html">Agricultural </a></li>
                                         <li><a href="s-civil.html">Manufacturing</a><a href="s-civil.html">Civil Engineering</a></li>
                                         <li><a href="s-automotive.html">Mechanical </a><a href="s-automotive.html">Auto Motive  </a></li>
-                                    </ul>
+                                    </ul> --}}
+                                    <img src="{{asset('interface/images/My-logo.png')}}" style="height: 300px;">
                                 </div>
                             </div>                                
                         
@@ -532,6 +533,8 @@
     </ul>           
     
 </div>   --}}
+
+
     </div>
 </body>
 </html>

@@ -14,8 +14,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $services = ServicesModelCMS::get();
-        
-        return view('interface.about',compact(['services']));
+       
+         return view('interface.about');
     }
 }

@@ -50,9 +50,19 @@
                             <li>Environmental Sensitivity, Personalised Solutions</li>
                         </ul>
                         
-                        <p>Progressively maintain extensive infomediaries via extensible nich. Capitalize on low hanging fruit. a ballpark value added is activity to beta test. Override the digital divide with additional click throughs from fruit to identify a ballpark value added.</p> 
+                        <p>Our Co. tends to produce aluminum profiles based on the highest level of quality and the application of highest systems European quality standards.
+
+                            Aim of innovation, excellence and integrity, and work to deliver our customers the best quality and the highest rate of satisfaction.
+                            
+                            Extends our innovation to bring new ideas, new methods, products and services form carefully and customized to suit the diverse needs of customers and markets.
+                            
+                            “We don't just build structures. We innovate, research, refine, test… and then do it all over again. We simply thrive on challenge - we've always delivered on time, every time. Not surprisingly, more than 80% of business comes from existing customers.”
+                            .</p> 
                         
-                         
+                            <div class="welcom-to-section-bottom d-flex justify-content-between">
+            
+                                <div class="welcom-sign-info"><strong>Ahmed Salah</strong><span>( CEO & Founder )</span></div>
+                            </div>  
                     </div>
                 </div>
                 
@@ -70,7 +80,7 @@
 </div>   
 <!-- ABOUT SECTION  SECTION END --> 
 
-   <!-- ALL SERVICES START -->
+   {{-- <!-- ALL SERVICES START -->
    <div class="section-full p-t80 p-b40 bg-no-repeat bg-bottom-right bg-cover" style="background-image:url({{asset('interface/images/background/bg7.jpg')}});opacity: 0.8;
    filter: alpha(opacity=80);">
     <div class="container">
@@ -89,7 +99,7 @@
          
             <div class="row d-flex justify-content-center">
                 @foreach($services as $service)
-                    <div class="col-lg-4 col-md-6 col-sm-12 m-b50">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-b50">
                         <div class="service-border-box">
                             <div class="wt-box service-box-1 bg-white">
                                 
@@ -98,7 +108,10 @@
                                     
                                 </div>
                                 <div class="service-box-content">
-                                    <p>{!!$service->content!!}</p>
+                                   
+                                    <p >{!!$service->content!!}</p>
+                                   
+                                    <a href="s-oilgas.html" class="site-button-link">Read More</a>
                                 </div>
                                 
                                 <div class="wt-icon-box-wraper">
@@ -118,6 +131,85 @@
         </div>
     </div>
 </div>   
-<!-- ALL SERVICES SECTION END --> 
+<!-- ALL SERVICES SECTION END -->  --}}
+<!-- CLIENT LOGO SECTION START -->
+<div class="section-full bg-gray">
+    <div class="container">
+        <div class="section-content">
+
+            <!-- TESTIMONIAL 4 START ON BACKGROUND -->
+            <div class="section-content">
+                <div class="section-content p-tb30 owl-btn-vertical-center">
+                    <div class="owl-carousel home-client-carousel-2">
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w1.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w2.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w3.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w4.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w5.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                    <a href="javascript:void(0);"><img
+                                            src="{{ asset('interface/images/client-logo/w6.png') }}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CLIENT LOGO  SECTION End -->
    
 @endsection
