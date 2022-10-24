@@ -222,7 +222,7 @@
                                             <li><a href="error-405.html">Error 405</a></li>                                                 
                                         </ul>
                                     </li> --}}
-                                    <li><a href="contact-1.html">Contact us</a></li>                                
+                                    <li><a href="{{route('contact')}}">Contact us</a></li>                                
                                 </ul>
     
                             </div>
@@ -343,7 +343,7 @@
     <!-- FOOTER END -->
 
     <!-- Get In Touch -->                            
-    <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image:url({{asset('interface/images/background/bg-7.jpg')}})"> 
+    {{-- <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image:url({{asset('interface/images/background/bg-7.jpg')}})"> 
         <div class="contact-nav">
              <a href="javascript:void(0)" class="contact_close">&times;</a>
              <div class="contact-nav-form">
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8">
-                            <form class="cons-contact-form" method="post" action="form-handler2.php">
+                            <form class="cons-contact-form" method="post" action="">
                                 <div class="m-b30">
                                     <!-- TITLE START -->
                                      <h2 class="m-b30">Get In Touch</h2>
@@ -440,7 +440,7 @@
              </div>
         </div> 
     </div>     
-    
+     --}}
     <!-- BUTTON TOP START -->
     <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
 

@@ -10,4 +10,7 @@ class EmailContactModelCMS extends Model
      */
     public $timestamps = false;
     protected $table   = 'email_contact';
+    protected $fillable = ['name', 'email','phone','subject','message','attach','date',
+    'time','readed','stuts'
+];
 }
