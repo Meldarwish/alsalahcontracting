@@ -168,7 +168,7 @@
     <div class="section-content">
         <div class="container">
             <div class="gmap-outline">
-                <div id="gmap_canvas2" class="google-map"></div>
+                <div id="gmap_canvas2" class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d999.9890530871202!2d31.30083585859879!3d30.101804885224443!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1666635939506!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
         </div>
     </div>

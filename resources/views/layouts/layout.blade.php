@@ -202,13 +202,13 @@
                                             <li><a href="wish-list.html">Wishlist</a></li>                                            
                                         </ul>                                
                                    </li>                                    --}}
-                                    <li><a href="javascript:;">Blog</a>
+                                    {{-- <li><a href="{{route('blog')}}">Blog</a>
                                         <ul class="sub-menu">
                                             <li><a href="blog-grid.html">Blog Grid</a></li>                                        
                                             <li><a href="blog-list-sidebar.html">Blog List</a></li>
                                             <li><a href="blog-post-right-sidebar.html">Blog Post</a></li>
                                         </ul>                                
-                                    </li>                                                                
+                                    </li>                                                                 --}}
                                     {{-- <li>
                                         <a href="javascript:;">Pages</a>
                                         <ul class="sub-menu">

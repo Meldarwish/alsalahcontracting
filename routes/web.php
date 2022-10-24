@@ -18,6 +18,7 @@ Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->na
 Route::get('/services', [App\Http\Controllers\ServicesController::class, 'index'])->name('services');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/message', [App\Http\Controllers\ContactController::class, 'store'])->name('message');
+// Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 
 // ============ CMS ===============
 Route::group(array('prefix' => 'admincp'),
