@@ -60,7 +60,7 @@
                             </li>
                         @endif
 
-                        @if( $role::check('blog_sections') === TRUE)
+                        {{-- @if( $role::check('blog_sections') === TRUE)
                             <li class="nav-item start ">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="fa fa-folder-open"></i>
@@ -133,7 +133,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        @endif
+                        @endif --}}
 
                         @if( $role::check('services') === TRUE)
                             <li class="nav-item start ">
@@ -238,7 +238,7 @@
                                 <h3 class="uppercase" style="color:#fff;">{{$trans::cmslang('global_settings')}}</h3>
                             </li>
 
-                        @if( $role::check('sitemenu') === TRUE)
+                        {{-- @if( $role::check('sitemenu') === TRUE)
                             <li class="nav-item start ">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="fa fa-bars"></i>
@@ -275,7 +275,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        @endif
+                        @endif --}}
 
                         @if( $role::check('contactus') === TRUE)
                             <li class="nav-item start ">

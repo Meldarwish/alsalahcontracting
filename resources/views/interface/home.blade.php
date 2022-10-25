@@ -117,7 +117,7 @@
                                 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index:13; text-transform:uppercase;">
-                                <a href="contact-1.html" class="site-button site-btn-effect">Book Now</a>
+                                {{-- <a href="contact-1.html" class="site-button site-btn-effect">Book Now</a> --}}
                             </div>
 
                         </li>
