@@ -222,6 +222,7 @@
                                             <li><a href="error-405.html">Error 405</a></li>                                                 
                                         </ul>
                                     </li> --}}
+                                    <li><a href="{{route('gallery')}}">Gallery</a></li>   
                                     <li><a href="{{route('contact')}}">Contact us</a></li>                                
                                 </ul>
     
@@ -254,7 +255,7 @@
                                 <div class="logo-footer clearfix">
                                     <a href="{{route('index')}}"><img src="{{asset('interface/images/My-logo2.png')}}" alt="" ></a>
                                 </div>
-                                <p>Over 15 year experience and knowledge international standards technologicaly changes our industrial systems, we are dedicated to provides the best solutions to our valued customers there are many variation solution we makes long-term investments goal in global companies in different sectors, mainly in USA and other countries</p>
+                                <p>Our Co. tends to produce aluminum profiles based on the highest level of quality and the application of highest systems European quality standards. Aim of innovation, excellence and integrity, and work to deliver our customers the best quality and the highest rate of satisfaction.</p>
                              </div>
                             <div class="widget recent-posts-entry">
                                <ul class="widget_address"> 
