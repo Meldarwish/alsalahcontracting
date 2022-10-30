@@ -20,7 +20,7 @@ Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])
 Route::post('/message', [App\Http\Controllers\ContactController::class, 'store'])->name('message');
 // Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 Route::get('/gallery', [App\Http\Controllers\GalleryController::class, 'index'])->name('gallery');
-
+Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');
 // ============ CMS ===============
 Route::group(array('prefix' => 'admincp'),
     function() {
