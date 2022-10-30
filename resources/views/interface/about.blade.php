@@ -42,7 +42,7 @@
                                 <div  class="sep-leaf-right"></div>
                             </div>
                         </div>
-                        <h2>We Are Here to Increase Your Knowledge With Experience</h2>
+                        <h2>Message From Our CEO</h2>
                         <!-- TITLE END-->
                         <ul class="site-list-style-one">
                             <li>Quality Control System , 100% Satisfaction Guarantee</li>
@@ -61,7 +61,7 @@
                         
                             <div class="welcom-to-section-bottom d-flex justify-content-between">
             
-                                <div class="welcom-sign-info"><strong>Ahmed Salah</strong><span>( CEO & Founder )</span></div>
+                                <div class="welcom-sign-info"><strong>Mahmoud Salah</strong><span>( CEO & Founder )</span></div>
                             </div>  
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     <div class="img-colarge2">
                         <div class="colarge-2 slide-right"><img src="{{asset('interface/images/banner/3.jpg')}}" alt=""></div>
                         <div class="colarge-2-1"><img src="{{asset('interface/images/colarge/s1.jpg')}}" alt=""></div>
-                        <div class="since-year-outer2"><div class="since-year2"><span>Since</span><strong>2015</strong></div></div>
+                        <div class="since-year-outer2"><div class="since-year2"><span>Since</span><strong>2008</strong></div></div>
                     </div>
                 </div>                              
 
