@@ -44,7 +44,11 @@
     <!-- LOADER STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/loader.min.css') }}">
     <!-- MAIN STYLE SHEET -->
+    @if(app()->getLocale()=='ar')
+    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/style3.css') }}">
+    @else
     <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/style.css') }}">
+    @endif
     <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/flaticon.min.css') }}">
 
@@ -121,7 +125,7 @@
                 </div>
 
                 <div class="header-info">
-                    <ul>
+                    {{-- <ul>
                         <li>
                             <div class="icon-md">
                                 <span class="icon-cell"><i class="flaticon-trophy"></i></span>
@@ -142,7 +146,7 @@
                             </div>
 
                         </li>
-                    </ul>
+                    </ul> --}}
                 </div>
 
             </div>
@@ -242,7 +246,7 @@
                                 <li class="">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         {{-- <i class="fa fa-map-marker"></i> --}}
-                                        <i  class="fa fa-globe fa-2xl" aria-hidden="true"></i>
+                                        <img  class="" src="{{asset('interface/images/earth.png')}}" style="width: 15px" aria-hidden="true">
                                     </a>
                                     
                                     <ul class="sub-menu">
