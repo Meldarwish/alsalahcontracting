@@ -21,4 +21,9 @@ return [
         'greeting7' =>'The Best Industry services',
         'greeting8' =>'High Performance Services For Multiple Industries And Technologies!',
     ],
+    'about' =>[
+        'welcome' => 'Welcome to Al salah contraction',
+        'ceo' => 'Message From Our CEO',
+        'ceo_message' =>''
+    ],
 ];

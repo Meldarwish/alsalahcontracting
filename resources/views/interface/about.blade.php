@@ -38,17 +38,17 @@
                         <div class="left wt-small-separator-outer">
                             <div class="wt-small-separator site-text-primary">
                                 <div  class="sep-leaf-left"></div>
-                                <div>Welcome to industro</div>
+                                <div>{{__('layout.about.welcome')}}</div>
                                 <div  class="sep-leaf-right"></div>
                             </div>
                         </div>
-                        <h2>Message From Our CEO</h2>
+                        <h2>{{__('layout.about.ceo')}}</h2>
                         <!-- TITLE END-->
                         <ul class="site-list-style-one">
-                            <li>Quality Control System , 100% Satisfaction Guarantee</li>
-                            <li>Unrivalled Workmanship, Professional and Qualified</li>
-                            <li>Environmental Sensitivity, Personalised Solutions</li>
-                        </ul>
+                            <li>{{__('layout.home.greeting3')}}</li>
+                            <li>{{__('layout.home.greeting4')}}</li>
+                            <li>{{__('layout.home.greeting5')}}</li>
+                           </ul>
                         
                         <p>Our Co. tends to produce aluminum profiles based on the highest level of quality and the application of highest systems European quality standards.
 
@@ -70,7 +70,7 @@
                     <div class="img-colarge2">
                         <div class="colarge-2 slide-right"><img src="{{asset('interface/images/banner/3.jpg')}}" alt=""></div>
                         <div class="colarge-2-1"><img src="{{asset('interface/images/colarge/s1.jpg')}}" alt=""></div>
-                        <div class="since-year-outer2"><div class="since-year2"><span>Since</span><strong>2008</strong></div></div>
+                        <div class="since-year-outer2"><div class="since-year2"><span>{{__('layout.layout.since')}}</span><strong>2008</strong></div></div>
                     </div>
                 </div>                              
 
