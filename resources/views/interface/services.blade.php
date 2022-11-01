@@ -8,15 +8,15 @@
         <div class="wt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="site-text-primary">Services</h2>
+                    <h2 class="site-text-primary">{{__('layout.layout.services')}}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->                            
             
                 <div>
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{route('index')}}">Home</a></li>
-                        <li>Our Services</li>
+                        <li><a href="{{route('index')}}">{{__('layout.layout.home')}}</a></li>
+                        <li>{{__('layout.layout.services')}}</li>
                     </ul>
                 </div>
             

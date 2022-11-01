@@ -58,7 +58,7 @@
                     white-space: normal; 
                     font-weight: 300;
                     font-family: 'Teko', sans-serif;">
-                                High Performance</div>
+                                </div>
 
                             <!-- LAYER NR. 3 [ for title ] -->
                             <div class="tp-caption   tp-resizeme" id="slide-901-layer-3"
@@ -79,7 +79,7 @@
                     font-weight: 300;
                     color:#fff;
                     border-width:0px; font-family: 'Teko', sans-serif; text-transform:uppercase;">
-                                Services For Industries</div>
+                                </div>
 
                             <!-- LAYER NR. 4 [ for paragraph] -->
                             <div class="tp-caption  tp-resizeme" id="slide-901-layer-4"
@@ -99,8 +99,7 @@
                     font-weight: 500; 
                     color:#fff;
                     border-width:0px;font-family: 'Poppins', sans-serif;">
-                                In the world of renewable energy we cast quite a shadow. innovative products and services...
-                            </div>
+                                </div>
 
                             <!-- LAYER NR. 5 [ for see all service botton ] -->
                             <div class="tp-caption tp-resizeme" id="slide-901-layer-5"
@@ -142,7 +141,7 @@
                             <div class="colarge-1"><img src="{{ asset('interface/images/colarge/s1.jpg') }}"
                                     alt="" class="slide-righ"></div>
                             <div class="since-year-outer">
-                                <div class="since-year"><span>{{__('layout.layout.since')}}</span><strong>2015</strong></div>
+                                <div class="since-year"><span>{{__('layout.layout.since')}}</span><strong>2008</strong></div>
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,11 @@
                                     <div class="wt-box service-box-1 bg-white">
 
                                         <div class="service-box-title title-style-2 site-text-secondry">
+                                            @if(app()->getLocale()=='ar')
+                                            <span class="s-title-one" style="font-size: 20px">{{ $service->title_ar }} </span>
+                                            @else
                                             <span class="s-title-one">{{ $service->title }} </span>
+                                            @endif
 
                                         </div>
                                         {{-- <div class="service-box-content">
@@ -260,9 +263,8 @@
                             </div>
                             <div class="whatWedo-media-content text-white">
                                 <div class="whatWedo-media-inner">
-                                    <h3>Team Working Dedicatedly</h3>
-                                    <p>We have 26+ years of experience with providing wide area of specialty services works
-                                        listed below</p>
+                                    <h3>{{__('layout.home.services5')}}</h3>
+                                    <p>{{__('layout.home.services6')}}</p>
                                 </div>
                             </div>
                         </div>
@@ -274,13 +276,11 @@
                             <div class="left wt-small-separator-outer">
                                 <div class="wt-small-separator site-text-primary">
                                     <div class="sep-leaf-left"></div>
-                                    <div>What We do</div>
+                                    <div>{{__('layout.home.what_we_do')}}</div>
                                     <div class="sep-leaf-right"></div>
                                 </div>
-                                <h2>Providing Full Range of High Services Solution Worldwide</h2>
-                                <p>Progressively maintain extensive infomediaries via extensible niches. Capitalize on low
-                                    hanging fruit to identify a ballpark value added is activity to beta test. Override the
-                                    igital divide</p>
+                                <h2>{{__('layout.home.what_we_do1')}}</h2>
+                                <p>{{__('layout.home.greeting6')}}</p>
 
                             </div>
                             <!-- TITLE END-->
@@ -288,17 +288,17 @@
                                 <div class="wt-icon-card bg-white shadow">
                                     <div class="wt-card-header"><i
                                             class="flaticon-robotic-arm site-text-primary"></i><span
-                                            class="title-style-2 site-text-secondry">A Full Services</span></div>
+                                            class="title-style-2 site-text-secondry">{{__('layout.home.services')}}</span></div>
                                     <div class="wt-card-content">
-                                        <p>We are Providing different services in this sector to wide area of world</p>
+                                        <p>{{__('layout.home.services2')}}</p>
                                     </div>
                                 </div>
 
                                 <div class="wt-icon-card bg-white shadow">
                                     <div class="wt-card-header"><i class="flaticon-repair site-text-primary"></i><span
-                                            class="title-style-2 site-text-secondry">All Maintenance</span></div>
+                                            class="title-style-2 site-text-secondry">{{__('layout.home.services3')}}</span></div>
                                     <div class="wt-card-content">
-                                        <p>We are Prous to Protect your organization with our award-winning products</p>
+                                        <p>{{__('layout.home.services4')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +319,7 @@
     <!-- VIDEO SECTION START -->
     <div class="section-full video-counter-section p-t80 bg-white">
 
-        <div class="video-counter-bg-white">
+        {{-- <div class="video-counter-bg-white">
             <div class="container">
                 <!-- TITLE START-->
                 <div class="section-head center wt-small-separator-outer text-center">
@@ -332,7 +332,7 @@
                 </div>
                 <!-- TITLE END-->
             </div>
-        </div>
+        </div> --}}
 
         <div class="video-counter-bg-image overlay-wraper bg-cover bg-no-repeat"
             style="background-image:url({{ asset('interface/images/background/bg2.jpg') }});">
@@ -356,21 +356,21 @@
                             <div class="col-lg-4 col-md-4 m-b30 ">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">35</h2>
-                                    <span class="site-text-white title-style-2">Projects Completed</span>
+                                    <span class="site-text-white title-style-2">{{__('layout.home.project')}}</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-4 m-b30">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">1435</h2>
-                                    <span class="site-text-white title-style-2">Work Employed</span>
+                                    <span class="site-text-white title-style-2">{{__('layout.home.employee')}}</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-4 m-b30">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">750</h2>
-                                    <span class="site-text-white title-style-2">Work facilities</span>
+                                    <span class="site-text-white title-style-2">{{__('layout.home.facility')}}</span>
                                 </div>
                             </div>
 
@@ -414,7 +414,7 @@
     <div class="section-head center wt-small-separator-outer text-center">
         <div class="wt-small-separator site-text-primary">
             <div class="sep-leaf-left"></div>
-            <div>Our Clients</div>
+            <div>{{__('layout.home.client')}}</div>
             <div class="sep-leaf-right"></div>
         </div>
 

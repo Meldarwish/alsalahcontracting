@@ -7,15 +7,15 @@
         <div class="wt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="site-text-primary">About Us</h2>
+                    <h2 class="site-text-primary">{{__('layout.layout.about')}}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->                            
             
                 <div>
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{route('index')}}">Home</a></li>
-                        <li>About-us</li>
+                        <li><a href="{{route('index')}}">{{__('layout.layout.home')}}</a></li>
+                        <li>{{__('layout.layout.about')}}</li>
                     </ul>
                 </div>
             
@@ -50,18 +50,11 @@
                             <li>{{__('layout.home.greeting5')}}</li>
                            </ul>
                         
-                        <p>Our Co. tends to produce aluminum profiles based on the highest level of quality and the application of highest systems European quality standards.
-
-                            Aim of innovation, excellence and integrity, and work to deliver our customers the best quality and the highest rate of satisfaction.
-                            
-                            Extends our innovation to bring new ideas, new methods, products and services form carefully and customized to suit the diverse needs of customers and markets.
-                            
-                            “We don't just build structures. We innovate, research, refine, test… and then do it all over again. We simply thrive on challenge - we've always delivered on time, every time. Not surprisingly, more than 80% of business comes from existing customers.”
-                            .</p> 
+                        <p>{{__('layout.about.ceo_message')}}</p> 
                         
                             <div class="welcom-to-section-bottom d-flex justify-content-between">
             
-                                <div class="welcom-sign-info"><strong>Mahmoud Salah</strong><span>( CEO & Founder )</span></div>
+                                <div class="welcom-sign-info"><strong>{{__('layout.about.ceo_name')}}</strong><span>( {{__('layout.about.ceo_title')}} )</span></div>
                             </div>  
                     </div>
                 </div>

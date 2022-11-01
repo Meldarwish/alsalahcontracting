@@ -8,15 +8,15 @@
         <div class="wt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="site-text-primary">Contact Us</h2>
+                    <h2 class="site-text-primary">{{__('layout.layout.contact')}}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->                            
             
                 <div>
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{route('index')}}">Home</a></li>
-                        <li>Contact-us</li>
+                        <li><a href="{{route('index')}}">{{__('layout.layout.home')}}</a></li>
+                        <li>{{__('layout.layout.contact')}}</li>
                     </ul>
                 </div>
             
@@ -49,47 +49,47 @@
                             <!-- TITLE START -->
                             <div class="section-head left wt-small-separator-outer">
                                 <div class="wt-small-separator site-text-primary">
-                                    <div class="sep-leaf-left"></div>
-                                    <div>Contact Form</div>
-                                    <div class="sep-leaf-right"></div>
+                                    <div style="color: aliceblue" class="sep-leaf-left"></div>
+                                    <div style="color: aliceblue">{{__('layout.contact.form')}}</div>
+                                    <div style="color: aliceblue" class="sep-leaf-right"></div>
                                 </div>
-                                <h2>Get In Touch</h2>
+                                <h2>{{__('layout.contact.touch')}}</h2>
                             </div>                                                                                
                             <!-- TITLE END --> 
                                                                     
                             <div class="row">
                                <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <input name="name" type="text" required class="form-control" placeholder="Name">
+                                        <input name="name" type="text" required class="form-control" placeholder="{{__('layout.contact.name')}}">
                                     </div>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                       <input name="email" type="text" class="form-control" required placeholder="Email">
+                                       <input name="email" type="text" class="form-control" required placeholder="{{__('layout.contact.email')}}">
                                     </div>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <input name="phone" type="text" class="form-control" required placeholder="Phone">
+                                        <input name="phone" type="text" class="form-control" required placeholder="{{__('layout.contact.phone')}}">
                                      </div>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                         <input name="subject" type="text" class="form-control" required placeholder="Subject">
+                                         <input name="subject" type="text" class="form-control" required placeholder="{{__('layout.contact.subject')}}">
                                      </div>
                                 </div>
                                 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                       <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                                       <textarea name="message" class="form-control" rows="4" placeholder="{{__('layout.contact.message')}}"></textarea>
                                      </div>
                                 </div>
                                 
                                <div class="col-md-12">
-                                    <button type="submit" class="site-button site-btn-effect">Submit Now</button>
+                                    <button type="submit" class="site-button site-btn-effect">{{__('layout.contact.submit')}}</button>
                                 </div>
                                 
                             </div>
@@ -105,11 +105,11 @@
                                 <!-- TITLE START-->
                                 <div class="section-head left wt-small-separator-outer">
                                     <div class="wt-small-separator site-text-primary">
-                                        <div class="sep-leaf-left"></div>
-                                        <div>Contact info</div>
-                                        <div class="sep-leaf-right"></div>
+                                        <div style="color: aliceblue" class="sep-leaf-left"></div>
+                                        <div style="color: aliceblue">{{__('layout.contact.info')}}</div>
+                                        <div style="color: aliceblue" class="sep-leaf-right"></div>
                                     </div>
-                                    <h2>Our Full Info</h2>
+                                    <h2>{{__('layout.contact.full_info')}}</h2>
                                 </div>                                                                                           
                                 <!-- TITLE END--> 
                                 
@@ -118,7 +118,7 @@
                                         <div class="wt-icon-box-wraper left m-b30">
                                             
                                             <div class="icon-content">
-                                                <h3 class="m-t0 site-text-primary">Phone number</h3>
+                                                <h3 class="m-t0 site-text-primary">{{__('layout.contact.phone')}}</h3>
                                                 <p>{{config('site.site_phone')}}</p>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@
                                         <div class="wt-icon-box-wraper left m-b30">
                                            
                                             <div class="icon-content">
-                                                <h3 class="m-t0 site-text-primary">Email address</h3>
+                                                <h3 class="m-t0 site-text-primary">{{__('layout.contact.email')}}</h3>
                                                 <p>{{config('site.site_email_1')}}</p>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@
                                         <div class="wt-icon-box-wraper left m-b30">
                                             
                                             <div class="icon-content">
-                                                <h3 class="m-t0 site-text-primary">Address info</h3>
+                                                <h3 class="m-t0 site-text-primary">{{__('layout.contact.address')}}</h3>
                                                 <p>{{config('site.site_address')}}</p>
                                             </div>
                                         </div>

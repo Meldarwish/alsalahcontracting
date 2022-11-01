@@ -244,7 +244,7 @@
                                 <li><a href="{{ route('gallery') }}">{{__('layout.layout.gallery')}}</a></li>
                                 <li><a href="{{ route('contact') }}">{{__('layout.layout.contact')}}</a></li>
                                 <li class="">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <a href="#" class="" data-toggle="dropdown">
                                         {{-- <i class="fa fa-map-marker"></i> --}}
                                         <img  class="" src="{{asset('interface/images/earth.png')}}" style="width: 15px" aria-hidden="true">
                                     </a>
@@ -294,10 +294,7 @@
                                                 src="{{ asset('interface/images/My-logo2.png') }}"
                                                 alt=""></a>
                                     </div>
-                                    <p>Our Co. tends to produce aluminum profiles based on the highest level of quality
-                                        and the application of highest systems European quality standards. Aim of
-                                        innovation, excellence and integrity, and work to deliver our customers the best
-                                        quality and the highest rate of satisfaction.</p>
+                                    <p>{{__('layout.about.ceo_message')}}</p>
                                 </div>
                                 <div class="widget recent-posts-entry">
                                     <ul class="widget_address">
@@ -321,13 +318,13 @@
                             <div class="row footer-h-right">
                                 <div class="col-lg-5 col-md-4">
                                     <div class="widget widget_services">
-                                        <h3 class="widget-title">Useful links</h3>
+                                        <h3 class="widget-title">{{__('layout.layout.links')}}</h3>
                                         <ul>
-                                            <li><a href="about-1.html">About</a></li>
-                                            <li><a href="our-prices.html">Pricing Plan </a></li>
-                                            <li><a href="Faq.html">FAQ</a></li>
-                                            <li><a href="team-single.html">Our Team </a></li>
-                                            <li><a href="services-1.html">Services </a></li>
+                                            <li><a href="{{ route('about') }}">{{__('layout.layout.about')}}</a></li>
+                                            <li><a href="{{ route('services') }}">{{__('layout.layout.services')}}</a></li>
+                                            <li><a href="{{ route('gallery') }}">{{__('layout.layout.gallery')}}</a></li>
+                                            <li><a href="{{ route('contact') }}">{{__('layout.layout.contact')}}</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -351,15 +348,15 @@
                             </div>
 
                             <div class="widget widget_newsletter">
-                                <h3 class="widget-title">Newsletter</h3>
-                                <p>Subscribe to our newsletter to receive latest news on our services.</p>
+                                <h3 class="widget-title">{{__('layout.layout.news')}}</h3>
+                                <p>{{__('layout.layout.subscribe')}}</p>
                                 <div class="newsletter-input">
                                     <div class="input-group">
                                         <input id="email" type="text" class="form-control" name="email"
-                                            placeholder="Enter your email">
+                                            placeholder="{{__('layout.contact.email')}}">
                                         <div class="input-group-append">
                                             <button type="submit"
-                                                class="input-group-text nl-search-btn text-black site-bg-primary title-style-2">Subscribe</button>
+                                                class="input-group-text nl-search-btn text-black site-bg-primary title-style-2">{{__('layout.layout.subscribe1')}}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -377,9 +374,9 @@
                     <div class="wt-footer-bot-left d-flex justify-content-between">
                         <span class="copyrights-text">Copyright © 2022</span>
                         <ul class="copyrights-nav">
-                            <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
+                            {{-- <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
                             <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                            <li><a href="contact-1.html">Contact Us</a></li>
+                            <li><a href="contact-1.html">Contact Us</a></li> --}}
                         </ul>
                     </div>
                 </div>

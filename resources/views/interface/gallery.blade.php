@@ -52,15 +52,15 @@
         <div class="wt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="site-text-primary">Gallery</h2>
+                    <h2 class="site-text-primary">{{__('layout.layout.gallery')}}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->                            
             
                 <div>
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{route('index')}}">Home</a></li>
-                        <li>Gallery</li>
+                        <li><a href="{{route('index')}}">{{__('layout.layout.home')}}</a></li>
+                        <li>{{__('layout.layout.gallery')}}</li>
                     </ul>
                 </div>
             
