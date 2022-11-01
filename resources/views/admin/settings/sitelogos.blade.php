@@ -35,7 +35,7 @@
                                                            <div>
                                                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="{{url('/uploads/config/')}}/{{config('site.site_logo')}}" alt="" /> </div>
+                                                                    <img src="{{url('/public/uploads/config/')}}/{{config('site.site_logo')}}" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">
@@ -53,7 +53,7 @@
                                                            <div>
                                                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="{{url('/uploads/config/')}}/{{config('site.site_mobilelogo')}}" alt="" /> </div>
+                                                                    <img src="{{url('/public/uploads/config/')}}/{{config('site.site_mobilelogo')}}" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">
@@ -72,7 +72,7 @@
                                                            <div>
                                                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="{{url('/uploads/config/')}}/{{config('site.site_faiveicone')}}" alt="" /> </div>
+                                                                    <img src="{{url('/public/uploads/config/')}}/{{config('site.site_faiveicone')}}" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">

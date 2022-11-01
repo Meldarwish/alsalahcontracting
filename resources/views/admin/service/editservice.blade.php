@@ -93,7 +93,7 @@
                                                         <div class="col-md-12">
                                                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="{{url('/uploads/service/')}}/{{$row->photo}}" alt="" /> </div>
+                                                                    <img src="{{url('/public/uploads/service/')}}/{{$row->photo}}" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">
@@ -112,7 +112,7 @@
                                                         <div class="col-md-12">
                                                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="{{url('/uploads/service/')}}/{{$row->icons}}" alt="" /> </div>
+                                                                    <img src="{{url('/public/uploads/service/')}}/{{$row->icons}}" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">

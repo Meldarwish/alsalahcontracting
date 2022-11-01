@@ -35,8 +35,8 @@
                                                     <td>{{$trans::getlangname($slide->langkey)}}</td>
                                                     <td> <a href="{{$slide->url}}" target="blank" class="btn btn-icon dark">
                                                             <i class="fa fa-globe"></i></a></td>
-                                                    <td><a href="{{url('/')}}/uploads/sliders/{{$slide->photo}}" target="blank">
-                                                    <img  src="{{url('/')}}/uploads/sliders/{{$slide->photo}}" id="table_immg"></a> </td>
+                                                    <td><a href="{{url('/')}}/public/uploads/sliders/{{$slide->photo}}" target="blank">
+                                                    <img  src="{{url('/')}}/public/uploads/sliders/{{$slide->photo}}" id="table_immg"></a> </td>
                                                     <td>
                                                     @if($slide->stuts === '1')
 														<a href="{{url('/admincp/slidestuts')}}/{{$slide->id}}/0" title="dicactive item" class="btn btn-icon green">

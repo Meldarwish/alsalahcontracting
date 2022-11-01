@@ -1,14 +1,14 @@
 @php
-   $code_lang  = app()->getLocale();
-
-   if($code_lang == 'ar'){
-          $dir = 'rtl';
-   }else{
-       $dir ='';
+    $code_lang = app()->getLocale();
+    
+    if ($code_lang == 'ar') {
+        $dir = 'rtl';
+    } else {
+        $dir = '';
     }
-         //   echo print_r( $live_lang); exit();
+    //   echo print_r( $live_lang); exit();
 @endphp
-<html dir="{{$dir}}">
+<html dir="{{ $dir }}">
 
 <head>
     <!-- META -->
@@ -20,8 +20,8 @@
     <meta name="description" content="" />
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="{{ asset('interface/images/favicon.ico') }}" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('interface/images/favicon.png') }}" />
+    <link rel="icon" href="{{ asset('public/interface/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/interface/images/favicon.png') }}" />
 
     <!-- PAGE TITLE HERE -->
     <title>Alsalah contracting</title>
@@ -31,42 +31,43 @@
 
 
     <!-- BOOTSTRAP STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/bootstrap.min.css') }}">
     <!-- FONTAWESOME STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/fontawesome/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('public/interface/css/fontawesome/css/font-awesome.min.css') }}" />
 
     <!-- OWL CAROUSEL STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/owl.carousel.min.css') }}">
     <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/bootstrap-select.min.css') }}">
     <!-- MAGNIFIC POPUP STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/magnific-popup.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/magnific-popup.min.css') }}">
     <!-- LOADER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/loader.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/loader.min.css') }}">
     <!-- MAIN STYLE SHEET -->
-    @if(app()->getLocale()=='ar')
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/style3.css') }}">
+    @if (app()->getLocale() == 'ar')
+        <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/style3.css') }}">
     @else
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/style.css') }}">
     @endif
     <!-- FLATICON STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/flaticon.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/flaticon.min.css') }}">
 
     <!-- IMAGE POPUP -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/lc_lightbox.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/lc_lightbox.css') }}" />
 
     <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('interface/css/skin/skin-1.css') }}">
+    <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('public/interface/css/skin/skin-1.css') }}">
     <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('interface/css/switcher.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/interface/css/switcher.css') }}">
 
 
     <!-- REVOLUTION SLIDER CSS -->
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('interface/plugins/revolution/revolution/css/settings.css') }}">
+        href="{{ asset('public/interface/plugins/revolution/revolution/css/settings.css') }}">
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('interface/plugins/revolution/revolution/css/navigation.css') }}">
+        href="{{ asset('public/interface/plugins/revolution/revolution/css/navigation.css') }}">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
@@ -119,7 +120,7 @@
                 <div class="logo-header">
                     <div class="logo-header-inner logo-header-one">
                         <a href="{{ route('index') }}">
-                            <img src="{{ asset('interface/images/My-logo2.png') }}" alt="" />
+                            <img src="{{ asset('public/interface/images/My-logo2.png') }}" alt="" />
                         </a>
                     </div>
                 </div>
@@ -167,7 +168,7 @@
                         <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
 
                             <ul class=" nav navbar-nav">
-                                <li><a href="{{ route('index') }}">{{__('layout.layout.home')}}</a>
+                                <li><a href="{{ route('index') }}">{{ __('layout.layout.home') }}</a>
                                     {{-- <ul class="sub-menu">
                                                     <li><a href="index.html">Home Industries</a></li>                                        
                                                     <li><a href="index-2.html">Home Factory</a></li>
@@ -184,7 +185,7 @@
                                         </ul>                                  --}}
                                 </li>
 
-                                <li><a href="{{ route('about') }}">{{__('layout.layout.about')}}</a>
+                                <li><a href="{{ route('about') }}">{{ __('layout.layout.about') }}</a>
                                     {{-- <ul class="sub-menu">
                                             <li><a href="about-1.html">About 1</a></li>                                        
                                             <li><a href="about-2.html">About 2</a></li>
@@ -204,7 +205,7 @@
                                                                                        
                                         </ul>                                
                                     </li> --}}
-                                <li><a href="{{ route('services') }}">{{__('layout.layout.services')}}</a>
+                                <li><a href="{{ route('services') }}">{{ __('layout.layout.services') }}</a>
                                     {{-- <ul class="sub-menu">
                                             <li><a href="project-grid.html">Project Grid</a></li>                                        
                                             <li><a href="project-masonry.html">Project Masonry</a></li>
@@ -241,19 +242,21 @@
                                             <li><a href="error-405.html">Error 405</a></li>                                                 
                                         </ul>
                                     </li> --}}
-                                <li><a href="{{ route('gallery') }}">{{__('layout.layout.gallery')}}</a></li>
-                                <li><a href="{{ route('contact') }}">{{__('layout.layout.contact')}}</a></li>
+                                <li><a href="{{ route('gallery') }}">{{ __('layout.layout.gallery') }}</a></li>
+                                <li><a href="{{ route('contact') }}">{{ __('layout.layout.contact') }}</a></li>
                                 <li class="">
                                     <a href="#" class="" data-toggle="dropdown">
                                         {{-- <i class="fa fa-map-marker"></i> --}}
-                                        <img  class="" src="{{asset('interface/images/earth.png')}}" style="width: 15px" aria-hidden="true">
+                                        <img class="" src="{{ asset('public/interface/images/earth.png') }}"
+                                            style="width: 15px" aria-hidden="true">
                                     </a>
-                                    
+
                                     <ul class="sub-menu">
                                         @foreach (Config('languages') as $lang => $language)
                                             @if ($lang != App::getLocale())
                                                 <li>
-                                                    <a href="{{ route('lang.switch', $lang) }}">{{ $language }}</a>
+                                                    <a
+                                                        href="{{ route('lang.switch', $lang) }}">{{ $language }}</a>
                                                 </li>
                                             @endif
                                         @endforeach
@@ -262,7 +265,7 @@
                             </ul>
 
                         </div>
-                        
+
 
                         {{-- <div class="header-nav-request">
                             	<a href="#" class="contact-slide-show">Request a Quote <i class="fa fa-angle-right"></i></a>
@@ -282,7 +285,7 @@
 
             <!-- FOOTER BLOCKES START -->
             <div class="footer-top bg-no-repeat bg-bottom-right"
-                style="background-image:url({{ asset('interface/images/background/footer-bg.png') }})">
+                style="background-image:url({{ asset('public/interface/images/background/footer-bg.png') }})">
                 <div class="container">
                     <div class="row">
 
@@ -291,10 +294,10 @@
                                 <div class="widget widget_about">
                                     <div class="logo-footer clearfix">
                                         <a href="{{ route('index') }}"><img
-                                                src="{{ asset('interface/images/My-logo2.png') }}"
+                                                src="{{ asset('public/interface/images/My-logo2.png') }}"
                                                 alt=""></a>
                                     </div>
-                                    <p>{{__('layout.about.ceo_message')}}</p>
+                                    <p>{{ __('layout.about.ceo_message') }}</p>
                                 </div>
                                 <div class="widget recent-posts-entry">
                                     <ul class="widget_address">
@@ -318,13 +321,20 @@
                             <div class="row footer-h-right">
                                 <div class="col-lg-5 col-md-4">
                                     <div class="widget widget_services">
-                                        <h3 class="widget-title">{{__('layout.layout.links')}}</h3>
+                                        <h3 class="widget-title">{{ __('layout.layout.links') }}</h3>
                                         <ul>
-                                            <li><a href="{{ route('about') }}">{{__('layout.layout.about')}}</a></li>
-                                            <li><a href="{{ route('services') }}">{{__('layout.layout.services')}}</a></li>
-                                            <li><a href="{{ route('gallery') }}">{{__('layout.layout.gallery')}}</a></li>
-                                            <li><a href="{{ route('contact') }}">{{__('layout.layout.contact')}}</a></li>
-                                            
+                                            <li><a href="{{ route('about') }}">{{ __('layout.layout.about') }}</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('services') }}">{{ __('layout.layout.services') }}</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('gallery') }}">{{ __('layout.layout.gallery') }}</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('contact') }}">{{ __('layout.layout.contact') }}</a>
+                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -340,7 +350,7 @@
                                         <li><a href="s-civil.html">Manufacturing</a><a href="s-civil.html">Civil Engineering</a></li>
                                         <li><a href="s-automotive.html">Mechanical </a><a href="s-automotive.html">Auto Motive  </a></li>
                                     </ul> --}}
-                                        <img src="{{ asset('interface/images/My-logo.png') }}"
+                                        <img src="{{ asset('public/interface/images/My-logo.png') }}"
                                             style="height: 300px;">
                                     </div>
                                 </div>
@@ -348,15 +358,15 @@
                             </div>
 
                             <div class="widget widget_newsletter">
-                                <h3 class="widget-title">{{__('layout.layout.news')}}</h3>
-                                <p>{{__('layout.layout.subscribe')}}</p>
+                                <h3 class="widget-title">{{ __('layout.layout.news') }}</h3>
+                                <p>{{ __('layout.layout.subscribe') }}</p>
                                 <div class="newsletter-input">
                                     <div class="input-group">
                                         <input id="email" type="text" class="form-control" name="email"
-                                            placeholder="{{__('layout.contact.email')}}">
+                                            placeholder="{{ __('layout.contact.email') }}">
                                         <div class="input-group-append">
                                             <button type="submit"
-                                                class="input-group-text nl-search-btn text-black site-bg-primary title-style-2">{{__('layout.layout.subscribe1')}}</button>
+                                                class="input-group-text nl-search-btn text-black site-bg-primary title-style-2">{{ __('layout.layout.subscribe1') }}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -387,16 +397,16 @@
         <!-- FOOTER END -->
 
         <!-- Get In Touch -->
-        {{-- <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image:url({{asset('interface/images/background/bg-7.jpg')}})"> 
+        {{-- <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image:url({{asset('public/interface/images/background/bg-7.jpg')}})"> 
         <div class="contact-nav">
              <a href="javascript:void(0)" class="contact_close">&times;</a>
              <div class="contact-nav-form">
-                <div class="contact-nav-info bg-white p-a30 bg-center bg-no-repeat" style="background-image:url({{asset('interface/images/background/bg-map2.png')}});">
+                <div class="contact-nav-info bg-white p-a30 bg-center bg-no-repeat" style="background-image:url({{asset('public/interface/images/background/bg-map2.png')}});">
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
                             <div class="contact-nav-media-section">
                                 <div class="contact-nav-media">
-                                    <img src="{{asset('interface/images/self-pic.png')}}" alt="">
+                                    <img src="{{asset('public/interface/images/self-pic.png')}}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -520,33 +530,35 @@
     <!-- LOADING AREA  END ====== -->
 
     <!-- JAVASCRIPT  FILES ========================================= -->
-    <script src="{{ asset('interface/js/jquery-2.2.0.min.js') }}"></script><!-- JQUERY.MIN JS -->
-    <script src="{{ asset('interface/js/popper.min.js') }}"></script><!-- POPPER.MIN JS -->
-    <script src="{{ asset('interface/js/bootstrap.min.js') }}"></script><!-- BOOTSTRAP.MIN JS -->
-    <script src="{{ asset('interface/js/bootstrap-select.min.js') }}"></script><!-- Form js -->
-    <script src="{{ asset('interface/js/magnific-popup.min.js') }}"></script><!-- MAGNIFIC-POPUP JS -->
-    <script src="{{ asset('interface/js/waypoints.min.js') }}"></script><!-- WAYPOINTS JS -->
-    <script src="{{ asset('interface/js/counterup.min.js') }}"></script><!-- COUNTERUP JS -->
-    <script src="{{ asset('interface/js/waypoints-sticky.min.js') }}"></script><!-- STICKY HEADER -->
-    <script src="{{ asset('interface/js/isotope.pkgd.min.js') }}"></script><!-- MASONRY  -->
-    <script src="{{ asset('interface/js/owl.carousel.min.js') }}"></script><!-- OWL  SLIDER  -->
-    <script src="{{ asset('interface/js/stellar.min.js') }}"></script><!-- PARALLAX BG IMAGE   -->
-    <script src="{{ asset('interface/js/theia-sticky-sidebar.js') }}"></script><!-- STICKY SIDEBAR  -->
-    <script src="{{ asset('interface/js/jquery.bootstrap-touchspin.js') }}"></script><!-- FORM JS -->
-    <script src="{{ asset('interface/js/custom.js') }}"></script><!-- CUSTOM FUCTIONS  -->
-    <script src="{{ asset('interface/js/lc_lightbox.lite.js') }}"></script><!-- IMAGE POPUP -->
-    <script src="{{ asset('interface/js/switcher.js') }}"></script><!-- SHORTCODE FUCTIONS  -->
+    <script src="{{ asset('public/interface/js/jquery-2.2.0.min.js') }}"></script><!-- JQUERY.MIN JS -->
+    <script src="{{ asset('public/interface/js/popper.min.js') }}"></script><!-- POPPER.MIN JS -->
+    <script src="{{ asset('public/interface/js/bootstrap.min.js') }}"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="{{ asset('public/interface/js/bootstrap-select.min.js') }}"></script><!-- Form js -->
+    <script src="{{ asset('public/interface/js/magnific-popup.min.js') }}"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="{{ asset('public/interface/js/waypoints.min.js') }}"></script><!-- WAYPOINTS JS -->
+    <script src="{{ asset('public/interface/js/counterup.min.js') }}"></script><!-- COUNTERUP JS -->
+    <script src="{{ asset('public/interface/js/waypoints-sticky.min.js') }}"></script><!-- STICKY HEADER -->
+    <script src="{{ asset('public/interface/js/isotope.pkgd.min.js') }}"></script><!-- MASONRY  -->
+    <script src="{{ asset('public/interface/js/owl.carousel.min.js') }}"></script><!-- OWL  SLIDER  -->
+    <script src="{{ asset('public/interface/js/stellar.min.js') }}"></script><!-- PARALLAX BG IMAGE   -->
+    <script src="{{ asset('public/interface/js/theia-sticky-sidebar.js') }}"></script><!-- STICKY SIDEBAR  -->
+    <script src="{{ asset('public/interface/js/jquery.bootstrap-touchspin.js') }}"></script><!-- FORM JS -->
+    <script src="{{ asset('public/interface/js/custom.js') }}"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="{{ asset('public/interface/js/lc_lightbox.lite.js') }}"></script><!-- IMAGE POPUP -->
+    <script src="{{ asset('public/interface/js/switcher.js') }}"></script><!-- SHORTCODE FUCTIONS  -->
 
     <!-- REVOLUTION JS FILES -->
 
-    <script src="{{ asset('interface/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
-    <script src="{{ asset('interface/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script src="{{ asset('public/interface/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{ asset('public/interface/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}">
+    </script>
 
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script src="{{ asset('interface/plugins/revolution/revolution/js/extensions/revolution-plugin.js') }}"></script>
+    <script src="{{ asset('public/interface/plugins/revolution/revolution/js/extensions/revolution-plugin.js') }}">
+    </script>
 
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
-    <script src="{{ asset('interface/js/rev-script-1.js') }}"></script>
+    <script src="{{ asset('public/interface/js/rev-script-1.js') }}"></script>
 
 
     <!-- STYLE SWITCHER  ======= -->

@@ -34,8 +34,8 @@
                                             	@foreach($sections as $section )
                                                 <tr>
                                                     <td>{{$section->title}}</td>
-                                                    <td><a href="{{url('/')}}/uploads/service/{{$section->photo}}" target="blank">
-                                                    <img  src="{{url('/')}}/uploads/service/{{$section->photo}}" id="table_immg"></a> </td>
+                                                    <td><a href="{{url('/')}}/public/uploads/service/{{$section->photo}}" target="blank">
+                                                    <img  src="{{url('/')}}/public/uploads/service/{{$section->photo}}" id="table_immg"></a> </td>
                                                     <td>{{$trans::getlangname($section->langkey)}}</td>
                                                      <td>
                                                     @if($section->stuts === 1)

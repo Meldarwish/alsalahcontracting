@@ -38,8 +38,8 @@
                                                         }
                                                     @endphp
                                                 <tr>
-                                                    <td><a href="{{url('/')}}/uploads/gallery/{{$photo->photo}}" target="blank">
-                                                    <img  src="{{url('/')}}/uploads/gallery/{{$photo->photo}}" id="table_immg"></a> </td>
+                                                    <td><a href="{{url('/')}}/public/uploads/gallery/{{$photo->photo}}" target="blank">
+                                                    <img  src="{{url('/')}}/public/uploads/gallery/{{$photo->photo}}" id="table_immg"></a> </td>
                                                     <td>
                                                     <a href="{{url('/admincp/getsectionphotos')}}/{{$photo->section_id}}" class="btn blue">{{$section_name}}</a>
                                                     </td>

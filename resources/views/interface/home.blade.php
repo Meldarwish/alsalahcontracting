@@ -17,8 +17,8 @@
                             data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                             data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{ asset('uploads/sliders/' . $slider->photo) }}" alt=""
-                                data-lazyload="{{ asset('uploads/sliders/' . $slider->photo) }}"
+                            <img src="{{ asset('public/uploads/sliders/' . $slider->photo) }}" alt=""
+                                data-lazyload="{{ asset('public/uploads/sliders/' . $slider->photo) }}"
                                 data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg"
                                 data-no-retina>
                             <!-- LAYERS -->
@@ -58,7 +58,7 @@
                     white-space: normal; 
                     font-weight: 300;
                     font-family: 'Teko', sans-serif;">
-                                </div>
+                            </div>
 
                             <!-- LAYER NR. 3 [ for title ] -->
                             <div class="tp-caption   tp-resizeme" id="slide-901-layer-3"
@@ -79,7 +79,7 @@
                     font-weight: 300;
                     color:#fff;
                     border-width:0px; font-family: 'Teko', sans-serif; text-transform:uppercase;">
-                                </div>
+                            </div>
 
                             <!-- LAYER NR. 4 [ for paragraph] -->
                             <div class="tp-caption  tp-resizeme" id="slide-901-layer-4"
@@ -99,7 +99,7 @@
                     font-weight: 500; 
                     color:#fff;
                     border-width:0px;font-family: 'Poppins', sans-serif;">
-                                </div>
+                            </div>
 
                             <!-- LAYER NR. 5 [ for see all service botton ] -->
                             <div class="tp-caption tp-resizeme" id="slide-901-layer-5"
@@ -138,10 +138,11 @@
 
                     <div class="col-lg-6 col-md-12">
                         <div class="img-colarge">
-                            <div class="colarge-1"><img src="{{ asset('interface/images/colarge/s1.jpg') }}"
+                            <div class="colarge-1"><img src="{{ asset('public/interface/images/colarge/s1.jpg') }}"
                                     alt="" class="slide-righ"></div>
                             <div class="since-year-outer">
-                                <div class="since-year"><span>{{__('layout.layout.since')}}</span><strong>2008</strong></div>
+                                <div class="since-year"><span>{{ __('layout.layout.since') }}</span><strong>2008</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,24 +153,25 @@
                             <div class="left wt-small-separator-outer">
                                 <div class="wt-small-separator site-text-primary">
                                     {{-- <div class="sep-leaf-rite"></div> --}}
-                                    <div>{{__('layout.home.greeting')}}</div>
+                                    <div>{{ __('layout.home.greeting') }}</div>
                                     {{-- <div class="sep-leaf-right"></div> --}}
                                 </div>
                             </div>
-                            <h2>{{__('layout.home.greeting2')}}</h2>
+                            <h2>{{ __('layout.home.greeting2') }}</h2>
                             <!-- TITLE END-->
                             <ul class="site-list-style-one">
-                                <li>{{__('layout.home.greeting3')}}</li>
-                                <li>{{__('layout.home.greeting4')}}</li>
-                                <li>{{__('layout.home.greeting5')}}</li>
-                             
+                                <li>{{ __('layout.home.greeting3') }}</li>
+                                <li>{{ __('layout.home.greeting4') }}</li>
+                                <li>{{ __('layout.home.greeting5') }}</li>
+
                             </ul>
 
-                            <p>{{__('layout.home.greeting6')}}</p>
+                            <p>{{ __('layout.home.greeting6') }}</p>
 
                             <div class="welcom-to-section-bottom d-flex justify-content-between">
                                 <div class="welcom-btn-position"><a href="{{ route('about') }}"
-                                        class="site-button-secondry site-btn-effect">{{__('layout.layout.read_more')}}</a></div>
+                                        class="site-button-secondry site-btn-effect">{{ __('layout.layout.read_more') }}</a>
+                                </div>
                                 {{-- <div class="welcom-sign-pic"><img src="images/sign.png" alt=""></div>
                             <div class="welcom-sign-info"><strong>Brayden</strong><span>( CEO & Founder )</span></div> --}}
                             </div>
@@ -184,7 +186,7 @@
 
     <!-- SERVICES SECTION START -->
     <div class="section-full p-t80 p-b70 overlay-wraper bg-no-repeat bg-bottom-left bg-cover services-main-section"
-        style="background-image:url({{ asset('interface/images/background/bg2.jpg') }})">
+        style="background-image:url({{ asset('/public/interface/images/background/bg2.jpg') }})">
         <div class="overlay-main site-bg-secondry opacity-08"></div>
 
         <div class="section-content services-section-content">
@@ -195,18 +197,19 @@
                         <div class="left wt-small-separator-outer text-white">
                             <div class="wt-small-separator site-text-primary">
                                 <div class="sep-leaf-left"></div>
-                                <div>{{__('layout.home.greeting7')}}</div>
+                                <div>{{ __('layout.home.greeting7') }}</div>
                                 <div class="sep-leaf-right"></div>
                             </div>
-                            <h2>{{__('layout.home.greeting8')}}</h2>
-                            <p>{{__('layout.home.greeting6')}}</p>
-                            <a href="{{route('contact')}}" class="site-button site-btn-effect">{{__('layout.layout.contact')}}</a>
+                            <h2>{{ __('layout.home.greeting8') }}</h2>
+                            <p>{{ __('layout.home.greeting6') }}</p>
+                            <a href="{{ route('contact') }}"
+                                class="site-button site-btn-effect">{{ __('layout.layout.contact') }}</a>
                         </div>
                         <!-- TITLE END-->
                     </div>
                 </div>
 
-                <div class="col-xl-6 col-lg-12 col-md-12" >
+                <div class="col-xl-6 col-lg-12 col-md-12">
                     <div class="services-section-content-right">
                         <div class="owl-carousel services-slider owl-btn-vertical-center">
                             @foreach ($services as $service)
@@ -215,10 +218,11 @@
                                     <div class="wt-box service-box-1 bg-white">
 
                                         <div class="service-box-title title-style-2 site-text-secondry">
-                                            @if(app()->getLocale()=='ar')
-                                            <span class="s-title-one" style="font-size: 20px">{{ $service->title_ar }} </span>
+                                            @if (app()->getLocale() == 'ar')
+                                                <span class="s-title-one"
+                                                    style="font-size: 20px">{{ $service->title_ar }} </span>
                                             @else
-                                            <span class="s-title-one">{{ $service->title }} </span>
+                                                <span class="s-title-one">{{ $service->title }} </span>
                                             @endif
 
                                         </div>
@@ -230,7 +234,8 @@
                                         <div class="wt-icon-box-wraper">
                                             <div class="">
 
-                                                <img class="" style="height: 150px" src="{{ asset('uploads/service/' . $service->photo) }}">
+                                                <img class="" style="height: 150px"
+                                                    src="{{ asset('public/uploads/service/' . $service->photo) }}">
                                             </div>
 
                                         </div>
@@ -259,12 +264,12 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="whatWedo-media-section">
                             <div class="wt-media">
-                                <img src="{{ asset('interface/images/what-we/pic2.jpg') }}" alt="">
+                                <img src="{{ asset('public/interface/images/what-we/pic2.jpg') }}" alt="">
                             </div>
                             <div class="whatWedo-media-content text-white">
                                 <div class="whatWedo-media-inner">
-                                    <h3>{{__('layout.home.services5')}}</h3>
-                                    <p>{{__('layout.home.services6')}}</p>
+                                    <h3>{{ __('layout.home.services5') }}</h3>
+                                    <p>{{ __('layout.home.services6') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -276,11 +281,11 @@
                             <div class="left wt-small-separator-outer">
                                 <div class="wt-small-separator site-text-primary">
                                     <div class="sep-leaf-left"></div>
-                                    <div>{{__('layout.home.what_we_do')}}</div>
+                                    <div>{{ __('layout.home.what_we_do') }}</div>
                                     <div class="sep-leaf-right"></div>
                                 </div>
-                                <h2>{{__('layout.home.what_we_do1')}}</h2>
-                                <p>{{__('layout.home.greeting6')}}</p>
+                                <h2>{{ __('layout.home.what_we_do1') }}</h2>
+                                <p>{{ __('layout.home.greeting6') }}</p>
 
                             </div>
                             <!-- TITLE END-->
@@ -288,17 +293,19 @@
                                 <div class="wt-icon-card bg-white shadow">
                                     <div class="wt-card-header"><i
                                             class="flaticon-robotic-arm site-text-primary"></i><span
-                                            class="title-style-2 site-text-secondry">{{__('layout.home.services')}}</span></div>
+                                            class="title-style-2 site-text-secondry">{{ __('layout.home.services') }}</span>
+                                    </div>
                                     <div class="wt-card-content">
-                                        <p>{{__('layout.home.services2')}}</p>
+                                        <p>{{ __('layout.home.services2') }}</p>
                                     </div>
                                 </div>
 
                                 <div class="wt-icon-card bg-white shadow">
                                     <div class="wt-card-header"><i class="flaticon-repair site-text-primary"></i><span
-                                            class="title-style-2 site-text-secondry">{{__('layout.home.services3')}}</span></div>
+                                            class="title-style-2 site-text-secondry">{{ __('layout.home.services3') }}</span>
+                                    </div>
                                     <div class="wt-card-content">
-                                        <p>{{__('layout.home.services4')}}</p>
+                                        <p>{{ __('layout.home.services4') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +342,7 @@
         </div> --}}
 
         <div class="video-counter-bg-image overlay-wraper bg-cover bg-no-repeat"
-            style="background-image:url({{ asset('interface/images/background/bg2.jpg') }});">
+            style="background-image:url({{ asset('public/interface/images/background/bg2.jpg') }});">
             <div class="overlay-main site-bg-secondry opacity-09"></div>
 
             {{-- <div class="video-section-outer mfp-gallery">
@@ -356,21 +363,21 @@
                             <div class="col-lg-4 col-md-4 m-b30 ">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">35</h2>
-                                    <span class="site-text-white title-style-2">{{__('layout.home.project')}}</span>
+                                    <span class="site-text-white title-style-2">{{ __('layout.home.project') }}</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-4 m-b30">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">1435</h2>
-                                    <span class="site-text-white title-style-2">{{__('layout.home.employee')}}</span>
+                                    <span class="site-text-white title-style-2">{{ __('layout.home.employee') }}</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-4 m-b30">
                                 <div class="wt-icon-box-wraper center">
                                     <h2 class="counter site-text-primary">750</h2>
-                                    <span class="site-text-white title-style-2">{{__('layout.home.facility')}}</span>
+                                    <span class="site-text-white title-style-2">{{ __('layout.home.facility') }}</span>
                                 </div>
                             </div>
 
@@ -414,7 +421,7 @@
     <div class="section-head center wt-small-separator-outer text-center">
         <div class="wt-small-separator site-text-primary">
             <div class="sep-leaf-left"></div>
-            <div>{{__('layout.home.client')}}</div>
+            <div>{{ __('layout.home.client') }}</div>
             <div class="sep-leaf-right"></div>
         </div>
 
@@ -434,7 +441,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w1.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w1.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>
@@ -444,7 +451,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w2.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w2.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>
@@ -454,7 +461,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w3.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w3.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>
@@ -464,7 +471,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w4.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w4.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>
@@ -474,7 +481,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w5.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w5.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>
@@ -484,7 +491,7 @@
                                 <div class="ow-client-logo">
                                     <div class="client-logo client-logo-media">
                                         <a href="javascript:void(0);"><img
-                                                src="{{ asset('interface/images/client-logo/w6.png') }}"
+                                                src="{{ asset('public/interface/images/client-logo/w6.png') }}"
                                                 alt=""></a>
                                     </div>
                                 </div>

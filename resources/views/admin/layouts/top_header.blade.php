@@ -4,9 +4,9 @@
                 <div class="page-header-inner ">
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
-                        <a href="{{url('admincp/')}}">
+                        <a href="{{url('/')}}">
                             @if (!empty(config('site.site_logo')))
-                            <img src="{{url('/uploads/config/')}}/{{config('site.site_logo')}}" alt="logo" class="logo-default" />
+                            <img src="{{url('/public/uploads/config/')}}/{{config('site.site_logo')}}" alt="logo" class="logo-default" />
                             @else
                             <img src="{{asset('admin/assets/layouts/layout/img/photo2.jpg')}}" alt="logo" class="logo-default" />
                             @endif
