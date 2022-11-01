@@ -37,6 +37,7 @@ function index(){
 
         $validator = Validator::make($request->all(), [
                     'title' => 'required|unique:services|max:255',
+                    'title_ar' => 'required',
         ],$messages);
         if ($validator->fails()) {
              return back()->withErrors($validator->errors());
@@ -62,10 +63,12 @@ function index(){
        $add_data->langkey  = $request->langkey;
        $add_data->url      = $url ;
        $add_data->title    = $request->title;
+       $add_data->title_ar    = $request->title_ar;
        $add_data->photo    = $img_name;
        $add_data->icons    = $icons;
        $add_data->stuts    = $request->stuts;
        $add_data->content  = $request->content;
+       $add_data->content_ar  = $request->content_ar;
        $add_data->meat_description = $request->meat_description;
        $add_data->meat_keywords    = $request->meat_keywords;
        $add_data->save();
@@ -122,11 +125,13 @@ function index(){
       }else { $icons=NULL; }
 
            $up_data->title   = $request->title;
+           $up_data->title_ar   = $request->title_ar;
            $up_data->url     = $url ;
            $up_data->stuts   = $request->stuts;
            $up_data->photo   = $img_name;
            $up_data->icons   = $icons;
            $up_data->content          = $request->content;
+           $up_data->content_ar          = $request->content_ar;
            $up_data->meat_description = $request->meat_description;
            $up_data->meat_keywords    = $request->meat_keywords;
            $up_data->save();

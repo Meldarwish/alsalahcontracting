@@ -40,8 +40,13 @@
                       <img  style="height: 300px" src="{{asset('uploads/service/'.$service->photo)}}" alt="" />
                       
                     <div class="wt-info" >
+                        @if(app()->getLocale()=='ar')
+                        <h3 class="wt-tilte m-b10 m-t0">{{$service->title_ar}}</h3>
+                        <p >{!!$service->content_ar!!}</p>
+                        @else
                         <h3 class="wt-tilte m-b10 m-t0">{{$service->title}}</h3>
                         <p >{!!$service->content!!}</p>
+                        @endif
                         {{-- <a href="project-detail.html" class="site-button-link">Read More</a> --}}
                         
                     </div>

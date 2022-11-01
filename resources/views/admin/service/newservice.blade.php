@@ -51,6 +51,15 @@
                                                     </div>
 
                                                     <div class="form-group">
+                                                        <label>{{$trans::cmslang('title_ar')}}</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-text-width"></i>
+                                                            </span>
+                                                            <input type="text"  name="title_ar" required="" class="form-control" placeholder="{{$trans::cmslang('title_ar')}}"> </div>
+                                                    </div>
+
+                                                    <div class="form-group">
                                                         <label> {{$trans::cmslang('seo_url')}}  </label>
                                                         <div class="input-group">
                                                             <span class="input-group-addon">
@@ -124,6 +133,16 @@
                                                  <label class="control-label col-md-12"> {{$trans::cmslang('addcontent')}}</label>
 
                                                   <textarea id="editor_1" name="content" class=" form-control"   rows="4" ></textarea>
+                                            <span class="help-block"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                 <label class="control-label col-md-12"> {{$trans::cmslang('addcontent_ar')}}</label>
+
+                                                  <textarea id="editor_2" name="content_ar" class=" form-control"   rows="4" ></textarea>
                                             <span class="help-block"></span>
                                                 </div>
                                             </div>
