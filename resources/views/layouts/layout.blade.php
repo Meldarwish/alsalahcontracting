@@ -163,7 +163,7 @@
                         <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
 
                             <ul class=" nav navbar-nav">
-                                <li><a href="{{ route('index') }}">{{__('layout.home')}}</a>
+                                <li><a href="{{ route('index') }}">{{__('layout.layout.home')}}</a>
                                     {{-- <ul class="sub-menu">
                                                     <li><a href="index.html">Home Industries</a></li>                                        
                                                     <li><a href="index-2.html">Home Factory</a></li>
@@ -180,7 +180,7 @@
                                         </ul>                                  --}}
                                 </li>
 
-                                <li><a href="{{ route('about') }}">{{__('layout.about')}}</a>
+                                <li><a href="{{ route('about') }}">{{__('layout.layout.about')}}</a>
                                     {{-- <ul class="sub-menu">
                                             <li><a href="about-1.html">About 1</a></li>                                        
                                             <li><a href="about-2.html">About 2</a></li>
@@ -200,7 +200,7 @@
                                                                                        
                                         </ul>                                
                                     </li> --}}
-                                <li><a href="{{ route('services') }}">{{__('layout.services')}}</a>
+                                <li><a href="{{ route('services') }}">{{__('layout.layout.services')}}</a>
                                     {{-- <ul class="sub-menu">
                                             <li><a href="project-grid.html">Project Grid</a></li>                                        
                                             <li><a href="project-masonry.html">Project Masonry</a></li>
@@ -237,8 +237,8 @@
                                             <li><a href="error-405.html">Error 405</a></li>                                                 
                                         </ul>
                                     </li> --}}
-                                <li><a href="{{ route('gallery') }}">{{__('layout.gallery')}}</a></li>
-                                <li><a href="{{ route('contact') }}">{{__('layout.contact')}}</a></li>
+                                <li><a href="{{ route('gallery') }}">{{__('layout.layout.gallery')}}</a></li>
+                                <li><a href="{{ route('contact') }}">{{__('layout.layout.contact')}}</a></li>
                                 <li class="">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         {{-- <i class="fa fa-map-marker"></i> --}}

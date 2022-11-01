@@ -142,7 +142,7 @@
                             <div class="colarge-1"><img src="{{ asset('interface/images/colarge/s1.jpg') }}"
                                     alt="" class="slide-righ"></div>
                             <div class="since-year-outer">
-                                <div class="since-year"><span>Since</span><strong>2015</strong></div>
+                                <div class="since-year"><span>{{__('layout.layout.since')}}</span><strong>2015</strong></div>
                             </div>
                         </div>
                     </div>
@@ -152,26 +152,25 @@
                             <!-- TITLE START-->
                             <div class="left wt-small-separator-outer">
                                 <div class="wt-small-separator site-text-primary">
-                                    <div class="sep-leaf-left"></div>
-                                    <div>Welcome to Al salah contracting</div>
-                                    <div class="sep-leaf-right"></div>
+                                    {{-- <div class="sep-leaf-rite"></div> --}}
+                                    <div>{{__('layout.home.greeting')}}</div>
+                                    {{-- <div class="sep-leaf-right"></div> --}}
                                 </div>
                             </div>
-                            <h2>We Are Here to Increase Your Knowledge With Experience</h2>
+                            <h2>{{__('layout.home.greeting2')}}</h2>
                             <!-- TITLE END-->
                             <ul class="site-list-style-one">
-                                <li>Quality Control System , 100% Satisfaction Guarantee</li>
-                                <li>Unrivalled Workmanship, Professional and Qualified</li>
-                                <li>Environmental Sensitivity, Personalised Solutions</li>
+                                <li>{{__('layout.home.greeting3')}}</li>
+                                <li>{{__('layout.home.greeting4')}}</li>
+                                <li>{{__('layout.home.greeting5')}}</li>
+                             
                             </ul>
 
-                            <p>Progressively maintain extensive infomediaries via extensible nich. Capitalize on low hanging
-                                fruit. a ballpark value added is activity to beta test. Override the digital divide with
-                                additional click throughs from fruit to identify a ballpark value added.</p>
+                            <p>{{__('layout.home.greeting6')}}</p>
 
                             <div class="welcom-to-section-bottom d-flex justify-content-between">
                                 <div class="welcom-btn-position"><a href="{{ route('about') }}"
-                                        class="site-button-secondry site-btn-effect">More About</a></div>
+                                        class="site-button-secondry site-btn-effect">{{__('layout.layout.read_more')}}</a></div>
                                 {{-- <div class="welcom-sign-pic"><img src="images/sign.png" alt=""></div>
                             <div class="welcom-sign-info"><strong>Brayden</strong><span>( CEO & Founder )</span></div> --}}
                             </div>
@@ -197,16 +196,12 @@
                         <div class="left wt-small-separator-outer text-white">
                             <div class="wt-small-separator site-text-primary">
                                 <div class="sep-leaf-left"></div>
-                                <div>The Best Industry services</div>
+                                <div>{{__('layout.home.greeting7')}}</div>
                                 <div class="sep-leaf-right"></div>
                             </div>
-                            <h2>High Performance Services For Multiple Insdustries And Technologies!</h2>
-                            <p>Progressively maintain extensive infomediaries via extensible niches.
-                                Capitalize on low hanging fruit to identify a ballpark value added is activity to beta test.
-                                Override the igital divide with additional click throughs from fruit to identify a ballpark
-                                value added.
-                            </p>
-                            <a href="contact-1.html" class="site-button site-btn-effect">Contact Us</a>
+                            <h2>{{__('layout.home.greeting8')}}</h2>
+                            <p>{{__('layout.home.greeting6')}}</p>
+                            <a href="{{route('contact')}}" class="site-button site-btn-effect">{{__('layout.layout.contact')}}</a>
                         </div>
                         <!-- TITLE END-->
                     </div>
